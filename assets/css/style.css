@@ -82,6 +82,7 @@ body{
 }
 
 .header__logout--info{
+  display: block;
   margin-right: 7px;
 }
 
@@ -116,6 +117,130 @@ body{
   display: flex;
   align-items: center;
 }
+
+
+
+.menu__opacity{
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  background-color: #333333;
+  opacity: 0.3;
+  display: block;
+  position: fixed;
+  visibility: hidden;
+  top: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  /*background-color: #ECEFF1;*/
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+
+.menu{
+  top: 0;
+  display: block;
+  position: fixed;
+  left: -100%;
+  height: 100%;
+  z-index: 10;
+  visibility: hidden;
+  background-color: #FFFFFF;
+  box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+}
+
+.menu__line{
+  width: 248px;
+  height: 1px;
+  background-color: #8B949F;
+  margin: 25px 34px 0 37px;
+}
+
+.logo{
+  margin: 7px 27px;
+  width: 154px;
+  height: 75px;
+}
+
+.setting{
+  margin-top: 36px;
+}
+
+.menu__data{
+  margin-left: 36px;
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 22px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #1E2C43;
+
+}
+
+.menu__main{
+  padding: 33px 0 0 34px;
+}
+
+.menu__section{
+  margin-bottom: 57px;
+}
+
+.menu__section--title{
+  font-family: 'HelveticaNeueCyr';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  /* identical to box height */
+
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+
+  color: #097CB4;
+  margin-bottom: 26px;
+}
+
+.menu__items{
+  list-style: none;
+}
+
+.menu__item{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 6px 16px 6px 0;
+  gap: 18px;
+
+  margin-right: 40px;
+  border-radius: 25px;
+}
+
+.menu__item img{
+  width: 20px;
+}
+
+#menu__toggle{
+  display: none;
+}
+
+#menu__toggle:checked ~ .menu__opacity{
+  visibility: visible;
+  left: 0;
+}
+#menu__toggle:checked ~ .menu {
+  visibility: visible;
+  left: 0;
+}
+
+
 
 
 
