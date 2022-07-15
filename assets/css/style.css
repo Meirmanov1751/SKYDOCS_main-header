@@ -192,6 +192,7 @@ body{
   background-color: #FFFFFF;
   -webkit-box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
   box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+
 }
 
 .menu__line{
@@ -347,4 +348,11 @@ body{
 
 @media (max-width: 380px) {
 
+}
+
+@media (max-height: 900px) {
+  .menu{
+    overflow-y: scroll;
+    height: 100%;
+  }
 }
